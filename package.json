@@ -2,11 +2,18 @@
   "name": "coc-utils",
   "version": "1.0.0",
   "description": "前端常用工具类库",
-  "main": "index.js",
+  "main": "dist/index.es.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c rollup.config.ts --configPlugin typescript"
   },
   "keywords": [],
   "author": "snowden.xu",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "prettier": "^3.0.0",
+    "rollup": "^3.26.3",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  }
 }
