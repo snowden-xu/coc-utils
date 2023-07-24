@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "description": "前端常用工具类库",
   "main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c rollup.config.ts --configPlugin typescript"
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "watch": "rollup --config rollup.config.ts --configPlugin typescript --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "utils"
+  ],
   "author": "snowden.xu",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.2",
     "prettier": "^3.0.0",
     "rollup": "^3.26.3",
+    "rollup-plugin-dts": "^5.3.0",
     "tslib": "^2.6.0",
     "typescript": "^5.1.6"
   }
