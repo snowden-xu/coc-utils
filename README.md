@@ -5,7 +5,12 @@
 yarn 
 ```
 
-### 打包
+### 测试命令
+```bash
+yarn test
+```
+
+### 打包命令
 ```bash
 yarn build
 ```
