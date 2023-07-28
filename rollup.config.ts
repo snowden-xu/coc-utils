@@ -10,8 +10,10 @@ const config = defineConfig([
     input: "src/index.ts",
     output: [
       {
-        file: "dist/index.esm.js",
+        dir: "dist",
         format: "esm",
+        preserveModules: true, // 开启这个选项会将每个模块单独打包，有利于摇树优化
+        sourcemap: true,
       },
       // {
       //   dir: "dist/index.cjs.js",
@@ -30,8 +32,9 @@ const config = defineConfig([
   {
     input: "src/index.ts",
     output: {
-      file: "dist/index.d.ts",
+      dir: "dist/types",
       format: "esm",
+      preserveModules: true,
     },
     plugins: [dts()],
   },

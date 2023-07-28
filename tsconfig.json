@@ -48,7 +48,7 @@
     // "sourceMap": true,                                /* 为生成的 JavaScript 文件创建源映射文件。 */
     // "outFile": "index.d.ts",                          /* 指定一个文件，将所有输出捆绑到一个 JavaScript 文件中。 如果“declaration”为 true，则还指定一个捆绑所有 .d.ts 输出的文件。 */
     // "outDir": "dist",                                 /* 指定所有生成的输出文件的输出文件夹。 */
-    // "removeComments": true,                           /* 禁用输出注释。*/
+    "removeComments": true,                              /* 禁用输出注释。*/
     // "noEmit": true,                                   /* 禁用编译输出文件。 */
     // "importHelpers": true,                            /* 允许在整个项目中只导入一次来自 tslib 的辅助函数，而不是每个文件都包含它们。 */
     // "importsNotUsedAsValues": "remove",               /* 指定用于只用于类型的导入的发出/检查行为。 */
