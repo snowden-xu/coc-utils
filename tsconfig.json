@@ -26,7 +26,7 @@
     /* 模块 */
     "module": "esnext",                                  /* 指定生成的模块代码类型。 */
     // "rootDir": "./",                                  /* 指定源文件中的根文件夹。  */
-    // "moduleResolution": "node",                       /* 指定 TypeScript 如何从给定的模块标识符查找文件。 */
+    "moduleResolution": "node",                          /* 指定 TypeScript 如何从给定的模块标识符查找文件。 */
     // "baseUrl": "./",                                  /* 指定解析非相对模块名称时的基本目录。 */
     // "paths": {},                                      /* 指定一组条目，将导入重新映射到其他查找位置。 */
     // "rootDirs": [],                                   /* 允许在解析模块时将多个文件夹视为一个整体。 */
@@ -42,12 +42,12 @@
     // "maxNodeModuleJsDepth": 1,                        /* 指定用于检查 node_modules 中 JavaScript 文件的最大文件夹深度。该选项仅在 allowJs 设置为 true 时有效。 */
 
     /* 输出 */
-     "declaration": true,                                /* 从 TypeScript 和 JavaScript 文件中生成 .d.ts 类型声明文件。 */
+    // "declaration": true,                              /* 从 TypeScript 和 JavaScript 文件中生成 .d.ts 类型声明文件。 */
     // "declarationMap": true,                           /* 为 .d.ts 类型声明文件创建源映射文件。 */
     // "emitDeclarationOnly": true,                      /* 只输出 .d.ts 类型声明文件，而不输出 JavaScript 文件。 */
     // "sourceMap": true,                                /* 为生成的 JavaScript 文件创建源映射文件。 */
-    // "outFile": "index.d.ts",                   /* 指定一个文件，将所有输出捆绑到一个 JavaScript 文件中。 如果“declaration”为 true，则还指定一个捆绑所有 .d.ts 输出的文件。 */
-     "outDir": "dist",                               /* 指定所有生成的输出文件的输出文件夹。 */
+    // "outFile": "index.d.ts",                          /* 指定一个文件，将所有输出捆绑到一个 JavaScript 文件中。 如果“declaration”为 true，则还指定一个捆绑所有 .d.ts 输出的文件。 */
+    // "outDir": "dist",                                 /* 指定所有生成的输出文件的输出文件夹。 */
     // "removeComments": true,                           /* 禁用输出注释。*/
     // "noEmit": true,                                   /* 禁用编译输出文件。 */
     // "importHelpers": true,                            /* 允许在整个项目中只导入一次来自 tslib 的辅助函数，而不是每个文件都包含它们。 */
@@ -63,7 +63,7 @@
     // "noEmitHelpers": true,                            /* 禁用在编译输出中生成自定义的辅助函数，例如 __extends。 */
     // "noEmitOnError": true,                            /* 如果报告了任何类型检查错误，则禁止发出文件。 */
     // "preserveConstEnums": true,                       /* 禁止在生成的代码中擦除 const enum 声明。 */
-      "declarationDir": "types",                       /* 指定生成的声明文件的输出目录。 */
+    // "declarationDir": "types",                        /* 指定生成的声明文件的输出目录。 */
 
     /* 互操作性约束 */
     // "isolatedModules": true,                          /* 确保每个文件可以安全地进行转译，而不依赖于其他导入。 */
@@ -97,6 +97,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "rollup.config.ts","typings.d.ts","jest.config.ts"],
   "exclude": ["node_modules", "dist"]
 }
